@@ -3,13 +3,11 @@ import './css/base16-light.css';
 import './css/codemirror.css';
 
 import cm from 'codemirror';
-import 'codemirror/mode/gfm/gfm';
+import 'codemirror/mode/markdown/markdown';
 import './vendor/continuelist';
 
-import markdownIt from 'markdown-it';
-import markdownItFootnote from 'markdown-it-footnote';
-
-const renderer = markdownIt().use(markdownItFootnote);
+import {Converter} from 'showdown';
+const converter = new Converter();
 
 
 class Editor {
@@ -37,7 +35,7 @@ class Editor {
         this.wrapper.appendChild(this.elem);
 
         this.editor = cm.fromTextArea(elem, {
-            mode: 'gfm',
+            mode: 'markdown',
             lineNumbers: false,
             matchBrackets: true,
             lineWrapping: true,
@@ -50,7 +48,7 @@ class Editor {
     }
 
     update(markdown) {
-        this.preview.innerHTML = renderer.render(markdown);
+        this.preview.innerHTML = converter.makeHtml(markdown);
     }
 }
 
