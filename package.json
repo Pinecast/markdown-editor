@@ -1,5 +1,5 @@
 {
-  "name": "markdown-editor",
+  "name": "pinecast-markdown-editor",
   "version": "1.0.0",
   "description": "A markdown editor",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattbasta/markdown-editor.git"
+    "url": "git+https://github.com/pinecast/markdown-editor.git"
   },
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "Matt Basta <me@mattbasta.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattbasta/markdown-editor/issues"
+    "url": "https://github.com/pinecast/markdown-editor/issues"
   },
-  "homepage": "https://github.com/mattbasta/markdown-editor#readme",
+  "homepage": "https://github.com/pinecast/markdown-editor#readme",
   "dependencies": {
     "codemirror": "^5.19.0",
     "css-loader": "^0.25.0",
