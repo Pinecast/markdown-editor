@@ -7,7 +7,6 @@ var markdownItFootnote = require('markdown-it-footnote');
 
 var renderer = markdownIt().use(markdownItFootnote);
 
-
 class Editor {
     constructor(elem) {
         this.wrapper = document.createElement('div');
@@ -38,7 +37,7 @@ class Editor {
             matchBrackets: true,
             lineWrapping: true,
             theme: 'base16-light',
-            extraKeys: {"Enter": "newlineAndIndentContinueMarkdownList"},
+            extraKeys: { "Enter": "newlineAndIndentContinueMarkdownList" }
         });
 
         this.editor.on('change', e => this.update(e.getValue()));
@@ -51,7 +50,7 @@ class Editor {
     }
 }
 
-
 export default function fromTextArea(textarea) {
     return new Editor(textarea);
 };
+//# sourceMappingURL=Editor.js.map

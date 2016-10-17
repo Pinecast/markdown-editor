@@ -2,11 +2,9 @@
 <html>
 <head>
   <title>Markdown Editor</title>
-  <script src="build/markdown-editor.min.js"></script>
-  <link rel="stylesheet" href="build/markdown-editor.min.css">
 </head>
 <body>
-  <textarea># (GitHub-Flavored) Markdown Editor
+  <textarea class="markdown-editor"># (GitHub-Flavored) Markdown Editor
 
 Basic useful feature list:
 
@@ -39,8 +37,6 @@ This is [on GitHub](https://github.com/mattbasta/markdown-editor) so let me know
  * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
  * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
 </textarea>
-  <script>
-    markdown(document.querySelector('textarea'))
-  </script>
+<script src="build/markdown-editor.js"></script>
 </body>
 </html>
