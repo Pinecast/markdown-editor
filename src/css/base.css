@@ -85,7 +85,7 @@
 .markdown-editor-preview sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 .markdown-editor-preview sup { top: -0.5em; }
 .markdown-editor-preview sub { bottom: -0.25em; }
-.markdown-editor-preview ul, .markdown-editor-preview ol { margin: 1em 0; padding: 0 0 0 2em; }
+.markdown-editor-preview ul, .markdown-editor-preview ol { margin: 0 0 1em; padding: 0 0 0 2em; }
 .markdown-editor-preview li p:last-child { margin:0 }
 .markdown-editor-preview dd { margin: 0 0 0 2em; }
 .markdown-editor-preview img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
