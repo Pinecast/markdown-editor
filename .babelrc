@@ -1,5 +1,16 @@
 {
   "presets": [
-    "es2015"
+    ["@babel/preset-env", {
+      "loose": true,
+      "modules": false,
+      "shippedProposals": true,
+      "targets": {
+        "chrome": 59,
+        "safari": "10.1",
+        "firefox": 55,
+        "edge": 15
+      },
+      "debug": true
+    }]
   ]
 }
